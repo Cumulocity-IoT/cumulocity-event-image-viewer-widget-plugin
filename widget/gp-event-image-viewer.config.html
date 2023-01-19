@@ -1,0 +1,70 @@
+<div class="form-group">
+    <c8y-form-group>
+        <div class="container-configimageviwer">
+            <div class="child-configimageviwer">
+                <div class="form-group">
+                    <label translate>Image Width</label>
+                    <input class="form-control" type="text" name="config.width" style="width:100%" [(ngModel)]="config.width">
+                </div>
+            </div>
+            <div class="child-configimageviwer">
+                <div class="form-group">
+                    <label translate>Image Height</label>
+                    <input class="form-control" type="text" name="config.height" style="width:100%" [(ngModel)]="config.height">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label translate>Event Type</label>
+            <input class="form-control" type="text" name="config.eventType" [(ngModel)]="config.eventType" />
+        </div>
+        <div  class="form-group">
+            <label class="c8y-radio radio-inline" title="Base URL">
+                <input type="radio" value="baseUrl" checked="checked" name="c8y-group" [(ngModel)]="config.imgSrcType" />
+                <span> </span>
+                <span>Base URL</span>
+              </label>
+            <label class="c8y-radio radio-inline" title="S3 Key">
+                <input type="radio" value="s3key" name="c8y-group"  [(ngModel)]="config.imgSrcType" />
+                <span> </span>
+                <span>S3 Key</span>
+              </label>
+        </div>
+          <div class="form-group" *ngIf="config.imgSrcType == 'baseUrl' " >
+            <label translate>Base URL</label>
+            <input class="form-control" type="text" name="config.baseUrl" style="width:100%" [(ngModel)]="config.baseUrl">
+        </div>  
+        <div class="container-configimageviwer" *ngIf="config.imgSrcType == 's3key'">
+            <div class="child-configimageviwer">
+                <div class="form-group">
+                    <label translate>AccessKey ID</label>
+                    <input class="form-control" type="text" name="config.accessKeyId" style="width:100%" [(ngModel)]="config.accessKeyId">
+                </div>
+                
+                <div class="form-group">
+                    <label translate>Secret AcessKey</label>
+                    <input class="form-control" class="form-control" type="password" name="config.secretAccessKey" style="width:100%" [(ngModel)]="config.secretAccessKey">
+                </div>
+                <div class="form-group">
+                    <label translate>Signature Version</label>
+                    <input class="form-control" type="text" name="config.signatureVersion" style="width:100%" [(ngModel)]="config.signatureVersion">
+                </div>
+            </div>
+            <div class="child-configimageviwer">
+                <div class="form-group">
+                    <label translate>Region</label>
+                    <input class="form-control" type="text" name="config.region" style="width:100%" [(ngModel)]="config.region">
+                </div>
+                <div class="form-group">
+                    <label translate>Bucket</label>
+                    <input class="form-control" type="text" name="config.bucket" style="width:100%" [(ngModel)]="config.bucket">
+                </div>
+                
+            </div>
+          </div>
+
+    
+
+
+    </c8y-form-group>
+</div>
