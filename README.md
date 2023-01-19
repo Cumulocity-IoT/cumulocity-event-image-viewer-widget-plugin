@@ -69,7 +69,6 @@ npm run build
 6. Deploy the app: 
 ```
 npm run deploy
-```
 
 ## QuickStart
 This guide will teach you how to add widget in your existing or new dashboard.
