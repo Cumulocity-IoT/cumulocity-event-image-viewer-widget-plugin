@@ -27,21 +27,12 @@ The Event Image Viewer widget help you to to display the events that are created
  *  **Uses AI Predictive analytics for image classification** 
  
 ## Installation
-## Runtime Widget Installation (Without Application Deployment)
 
 
 ### Runtime Widget Deployment?
 
 * This widget support runtime deployment. Download [Runtime Binary](https://github.com/SoftwareAG/cumulocity-event-image-viewer-widget-plugin/releases/download/1.0.0-beta/event-image-viewer-runtime-widget-1.0.0-beta.zip) and install via Administrations(Beta mode) --> Ecosystems --> Applications --> Packages.
 
-
-**Prerequisites:**
-  
-* Git
-  
-* NodeJS (release builds are currently built with `v14.18.0`)
-  
-* NPM (Included with NodeJS)
 
 **Instructions**
 
@@ -70,6 +61,7 @@ npm run build
 ```
 npm run deploy
 
+
 ## QuickStart
 This guide will teach you how to add widget in your existing or new dashboard.
 
@@ -90,6 +82,14 @@ This guide will teach you how to add widget in your existing or new dashboard.
 8. Check for your widget and test it out.
 
 Congratulations! Event Image Viewer Widget is configured.
+
+
+## User Guide
+
+1. Target Assets/Devices - select group of interest
+![s3_image_viewer_config1](https://user-images.githubusercontent.com/70568133/102999005-473edd80-454e-11eb-9a09-9bb6aac913a4.PNG)
+![s3_image_viewer_config2](https://user-images.githubusercontent.com/70568133/102999029-50c84580-454e-11eb-8787-236fcc998985.PNG)
+
 
 ------------------------------
 
