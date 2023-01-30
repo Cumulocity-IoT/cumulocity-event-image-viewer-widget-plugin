@@ -28,38 +28,9 @@ The Event Image Viewer widget help you to to display the events that are created
  
 ## Installation
 
-
 ### Runtime Widget Deployment?
 
 * This widget support runtime deployment. Download [Runtime Binary](https://github.com/SoftwareAG/cumulocity-event-image-viewer-widget-plugin/releases/download/1.0.0-beta/event-image-viewer-runtime-widget-1.0.0-beta.zip) and install via Administrations(Beta mode) --> Ecosystems --> Applications --> Packages.
-
-
-**Instructions**
-
-1. Clone the repository:
-```
-git clone https://github.com/SoftwareAG/cumulocity-event-image-viewer-widget-plugin.git
-```
-2. Change directory:
-
-cd cumulocity-demo-widget-plugin
-```cumulocity-event-image-viewer-widget-plugin
-
-3. Install the dependencies: 
-```
-npm install
-```
-4. (Optional) Local development server: 
-```
-npm start -- --shell cockpit
-```
-5. Build the app: 
-```
-npm run build
-```
-6. Deploy the app: 
-```
-npm run deploy
 
 
 ## QuickStart
