@@ -1,6 +1,6 @@
 {
   "name": "cumulocity-event-image-viewer-widget-plugin",
-  "version": "1.0.0-beta",
+  "version": "1.0.0",
   "description": "This Event Image Viewer Widget help you to display the events that are created whenever the image is captured by the camera.",
   "scripts": {
     "start": "c8ycli server",
@@ -10,7 +10,9 @@
     "prebuild": " gulp clean",
     "postbuild": " gulp bundle"
   },
-  "keywords": [],
+  "keywords": ["Cumulocity",
+  "Plugin",
+  "Widget"],
   "author": "Darpankumar Lalani - Software AG, Global Presales",
   "license": "Apache-2.0",
   "dependencies": {
@@ -58,10 +60,10 @@
   },
   "c8y": {
     "application": {
-      "name": "Cumulocity Event Image Viewer Widget Plugin",
+      "name": "Event Image Viewer ",
       "description": "This Event Image Viewer Widget help you to display the events that are created whenever the image is captured by the camera.",
-      "contextPath": "event-image-viewer-runtime-widget",
-      "key": "event-image-viewer-runtime-widget-application-key",
+      "contextPath": "sag-ps-pkg-event-image-viewer-runtime-widget",
+      "key": "sag-ps-pkg-event-image-viewer-runtime-widget-application-key",
       "globalTitle": "This Event Image Viewer Widget help you to display the events that are created whenever the image is captured by the camera.",
       "tabsHorizontal": true,
       "isPackage": true,
@@ -73,7 +75,7 @@
       "requiredPlatformVersion": ">=1016.0.0",
       "exports": [
         {
-          "name": "Cumulocity Event Image Viewer Widget Plugin",
+          "name": "Event Image Viewer",
           "module": "GpEventImageViewerModule",
           "path": "./widget/gp-event-image-viewer.module.ts",
           "description": "This Event Image Viewer Widget help you to display the events that are created whenever the image is captured by the camera."

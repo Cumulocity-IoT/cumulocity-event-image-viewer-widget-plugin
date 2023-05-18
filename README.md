@@ -4,13 +4,11 @@
 This Event Image Viewer Widget is the Cumulocity module federation plugin created using c8ycli. This plugin can be used in Application Builder or Cockpit.
 The Event Image Viewer widget help you to to display the events that are created whenever the image is captured by the camera.
 
-### Please note that this plugin is in currently under BETA mode.
-
 ### Please choose Event Image Viewer release based on Cumulocity/Application builder version:
 
 | APPLICATION BUILDER | CUMULOCITY  | EVENT IMAGE VIEWER WIDGET |
 |---------------------|-------------|---------------------------|
-| 2.x.x(coming soon)  | >= 1016.x.x | 1.x.x                     | 
+| 2.x.x               | >= 1016.x.x | 1.x.x                     | 
 
 
 ![s3_image_viewer_widget](https://user-images.githubusercontent.com/70568133/102998337-fe3a5980-454c-11eb-8fee-51ad96c5c927.PNG)
@@ -30,7 +28,7 @@ The Event Image Viewer widget help you to to display the events that are created
 
 ### Runtime Widget Deployment?
 
-* This widget support runtime deployment. Download [Runtime Binary](https://github.com/SoftwareAG/cumulocity-event-image-viewer-widget-plugin/releases/download/1.0.0-beta/event-image-viewer-runtime-widget-1.0.0-beta.zip) and install via Administrations(Beta mode) --> Ecosystems --> Applications --> Packages.
+* This widget support runtime deployment. Download [Runtime Binary](https://github.com/SoftwareAG/cumulocity-event-image-viewer-widget-plugin/releases/download/1.0.0-beta/event-image-viewer-runtime-widget-1.0.0-beta.zip) and install via Administrations --> Ecosystems --> Applications --> Packages.
 
 
 ## QuickStart
