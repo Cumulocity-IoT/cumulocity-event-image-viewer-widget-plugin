@@ -49,6 +49,7 @@ import{ CollapseModule } from 'ngx-bootstrap/collapse';
           description: 'Event Image Viewer',
           component: GpEventImageViewerComponent,
           configComponent: GpEventImageViewerConfigComponent,
+          previewImage: require("../widget/eventimageviewer.png"),
           data: {
               ng1: {
                   options: {
