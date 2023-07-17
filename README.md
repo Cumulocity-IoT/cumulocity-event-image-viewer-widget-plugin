@@ -11,7 +11,7 @@ The Event Image Viewer widget help you to to display the events that are created
 | 2.x.x               | >= 1016.x.x | 1.x.x                     | 
 
 
-![s3_image_viewer_widget](https://user-images.githubusercontent.com/70568133/102998337-fe3a5980-454c-11eb-8fee-51ad96c5c927.PNG)
+![Image](assets/event-image-viewer.png)
 
 
 
@@ -56,8 +56,8 @@ Congratulations! Event Image Viewer Widget is configured.
 ## User Guide
 
 1. Target Assets/Devices - select group of interest
-![s3_image_viewer_config1](https://user-images.githubusercontent.com/70568133/102999005-473edd80-454e-11eb-9a09-9bb6aac913a4.PNG)
-![s3_image_viewer_config2](https://user-images.githubusercontent.com/70568133/102999029-50c84580-454e-11eb-8787-236fcc998985.PNG)
+![Image](assets/image-viewer.png)
+![Image](assets/s3key.png)
 
 
 ------------------------------

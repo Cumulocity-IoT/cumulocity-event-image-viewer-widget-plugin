@@ -10,9 +10,11 @@
     "prebuild": " gulp clean",
     "postbuild": " gulp bundle"
   },
-  "keywords": ["Cumulocity",
-  "Plugin",
-  "Widget"],
+  "keywords": [
+    "Cumulocity",
+    "Plugin",
+    "Widget"
+  ],
   "author": "Darpankumar Lalani - Software AG, Global Presales",
   "license": "Apache-2.0",
   "dependencies": {
@@ -85,7 +87,25 @@
         "widget-plugin": [
           "GpEventImageViewerModule"
         ]
-      }
+      },
+      "copy": [
+        {
+          "from": "assets/event-image-viewer.png",
+          "to": "assets/event-image-viewer.png"
+        },
+        {
+          "from": "assets/image-viewer.png",
+          "to": "assets/image-viewer.png"
+        },
+        {
+          "from": "assets/s3key.png",
+          "to": "assets/s3key.png"
+        },
+        {
+          "from": "LICENSE",
+          "to": "LICENSE.txt"
+        }
+      ]
     },
     "cli": {}
   },
