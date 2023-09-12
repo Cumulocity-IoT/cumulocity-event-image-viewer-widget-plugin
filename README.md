@@ -6,7 +6,7 @@ The Event Image Viewer widget help you to to display the events that are created
 
 ### Please choose Event Image Viewer release based on Cumulocity/Application builder version:
 
-| APPLICATION BUILDER | CUMULOCITY  | EVENT IMAGE VIEWER WIDGET |
+| APPLICATION BUILDER &nbsp;|&nbsp; CUMULOCITY &nbsp; |&nbsp; EVENT IMAGE VIEWER WIDGET&nbsp; |
 |---------------------|-------------|---------------------------|
 | 2.x.x               | >= 1016.x.x | 1.x.x                     | 
 
