@@ -1,5 +1,5 @@
 
-# Event Image Viewer Widget for Cumulocity [<img width="35" src="https://user-images.githubusercontent.com/32765455/211497905-561e9197-18b9-43d5-a023-071d3635f4eb.png"/>](https://github.com/SoftwareAG/cumulocity-event-image-viewer-widget-plugin/releases/download/1.0.1/sag-ps-pkg-event-image-viewer-runtime-widget-1.0.1.zip)
+# Event Image Viewer Widget for Cumulocity [<img width="35" src="https://user-images.githubusercontent.com/32765455/211497905-561e9197-18b9-43d5-a023-071d3635f4eb.png"/>](https://github.com/SoftwareAG/cumulocity-event-image-viewer-widget-plugin/releases/download/1.0.2/sag-ps-pkg-event-image-viewer-runtime-widget-1.0.2.zip)
 
 This Event Image Viewer Widget is the Cumulocity module federation plugin created using c8ycli. This plugin can be used in Application Builder or Cockpit.
 The Event Image Viewer widget help you to to display the events that are created whenever the image is captured by the camera.
@@ -28,7 +28,7 @@ The Event Image Viewer widget help you to to display the events that are created
 
 ### Runtime Widget Deployment?
 
-* This widget support runtime deployment. Download [Runtime Binary](https://github.com/SoftwareAG/cumulocity-event-image-viewer-widget-plugin/releases/download/1.0.1/sag-ps-pkg-event-image-viewer-runtime-widget-1.0.1.zip) and install via Administrations --> Ecosystems --> Applications --> Packages.
+* This widget support runtime deployment. Download [Runtime Binary](https://github.com/SoftwareAG/cumulocity-event-image-viewer-widget-plugin/releases/download/1.0.2/sag-ps-pkg-event-image-viewer-runtime-widget-1.0.2.zip) and install via Administrations --> Ecosystems --> Applications --> Packages.
 
 
 ## QuickStart
