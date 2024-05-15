@@ -1,6 +1,6 @@
 {
   "name": "cumulocity-event-image-viewer-widget-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This Event Image Viewer Widget help you to display the events that are created whenever the image is captured by the camera.",
   "scripts": {
     "start": "c8ycli server",
