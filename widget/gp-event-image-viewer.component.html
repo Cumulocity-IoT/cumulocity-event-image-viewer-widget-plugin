@@ -27,12 +27,12 @@
 </div>
 <div style="margin-left: 70px;">
   <div class="timeline-list">
-    <div class="timeline-list-item flex-row " *ngFor="let event of displayData"
+    <div class="timeline-list-item event-image-flex-row " *ngFor="let event of displayData"
       [ngClass]="{'expanded': !event.isCollapsed1}">
       <small class="timeline-item-date text-right">
         <strong>{{event.creationTime | date:'d MMMM \n yyyy HH:mm'}}</strong><br />
       </small>
-      <div class="timeline-item-content flex-row wrap pointer" (click)="collapseLogic(event.id);">
+      <div class="timeline-item-content event-image-flex-row wrap pointer" (click)="collapseLogic(event.id);">
         <div class="list-item-actions">
           <button type="button" title="Expand" class="collapse-btn">
             <i c8yIcon="chevron-down"></i>
