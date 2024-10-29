@@ -111,9 +111,10 @@ export class GpEventImageViewerComponent implements OnInit {
             this.config.baseUrl + this.evantData[this.selectedIndex].Image
           );
         } else {
-          this.url = this.imageViewrService.getImage(
-            this.evantData[this.selectedIndex].Image
-          );
+          this.url = 'data:image/png;base64, '+this.evantData[this.selectedIndex].Image
+          //this.url = this.imageViewrService.getImage(
+          //  this.evantData[this.selectedIndex].Image
+          //);
         }
         this.imageMap[this.evantData[this.selectedIndex].id] = this.url;
       }
@@ -182,9 +183,9 @@ export class GpEventImageViewerComponent implements OnInit {
   }
 
   private showMapDialog(data: any): BsModalRef {
-    return this.modalService.show(ImageViewerDialog, { class: 'modal-lg', initialState: { input: data }});
+    return this.modalService.show(ImageViewerDialog, { class: 'modal-lg', initialState: {input: data}});
   }
-
+  
   // fetches event list from event servcice
   async fetchEvents() {
         const eventFilter = {
@@ -255,8 +256,11 @@ export interface DialogData {
 export class ImageViewerDialog {
 
   input:any;
-  constructor(public dialogRef: MatDialogRef<ImageViewerDialog>,public _DomSanitizationService: DomSanitizer, @Inject(MAT_DIALOG_DATA) public data: DialogData
-  ) {}
+
+  constructor(public dialogRef: MatDialogRef<ImageViewerDialog>,public _DomSanitizationService: DomSanitizer
+  ) {
+    console.log(this.input);
+  }
 
   onNoClick(): void {
     this.dialogRef.close();
