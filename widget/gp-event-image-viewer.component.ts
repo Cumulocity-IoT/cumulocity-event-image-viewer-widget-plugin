@@ -24,7 +24,6 @@ import {
   Input,
 } from '@angular/core';
 import {
-  // MatDialog,
   MAT_DIALOG_DATA,
   MatDialogRef,
 } from '@angular/material/dialog';
@@ -179,7 +178,7 @@ export class GpEventImageViewerComponent implements OnInit {
     };
     const dialogRef = this.showMapDialog(data);
 
-    await dialogRef.content.event.subscribe(async result => {});
+    //await dialogRef.content.event.subscribe(async result => {});
   }
 
   private showMapDialog(data: any): BsModalRef {
@@ -256,14 +255,13 @@ export interface DialogData {
 export class ImageViewerDialog {
 
   input:any;
-
-  constructor(public dialogRef: MatDialogRef<ImageViewerDialog>,public _DomSanitizationService: DomSanitizer
-  ) {
-    console.log(this.input);
-  }
+  constructor(public modalRef: BsModalRef,public _DomSanitizationService: DomSanitizer) {}
+  //constructor(public dialogRef: MatDialogRef<ImageViewerDialog>,public _DomSanitizationService: DomSanitizer, @Inject(MAT_DIALOG_DATA) public data: any
+  //) {}
 
   onNoClick(): void {
-    this.dialogRef.close();
+    this.modalRef.hide();
+    //this.dialogRef.close();
   }
 }
 

@@ -27,7 +27,7 @@ import {
 import { CockpitDashboardModule } from "@c8y/ngx-components/context-dashboard";
 import { BsModalRef, BsModalService, ModalModule } from "ngx-bootstrap/modal";
 import { GpEventImageViewerModule } from "./widget/gp-event-image-viewer.module";
-import { MAT_DIALOG_DATA, MatDialogRef } from "@angular/material/dialog";
+import { MAT_DIALOG_DATA, MatDialogRef, MatDialogModule} from "@angular/material/dialog";
 
 @NgModule({
   imports: [
@@ -35,20 +35,11 @@ import { MAT_DIALOG_DATA, MatDialogRef } from "@angular/material/dialog";
     ngRouterModule.forRoot([], { enableTracing: false, useHash: true }),
     RouterModule.forRoot(),
     CoreModule.forRoot(),
+    ModalModule.forRoot(),
     GpEventImageViewerModule,
     CockpitDashboardModule,
   ],
   providers: [
-    BsModalService,
-    ModalModule,
-    {
-      provide: MatDialogRef,
-      useValue: {}
-    },
-    { 
-      provide: MAT_DIALOG_DATA, 
-      useValue: {} 
-    }
   ],
   bootstrap: [BootstrapComponent],
 })
