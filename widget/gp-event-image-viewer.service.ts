@@ -28,6 +28,7 @@ export class GpEventImageViewerService {
   constructor() { }
 
   fetchImageFromBaseUrl(url): Promise<any> {
+    console.log("Fetching from BaseURL");
     return fetch(url);
   }
   // to make a connection with AWS

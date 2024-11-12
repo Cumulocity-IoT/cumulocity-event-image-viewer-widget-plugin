@@ -93,31 +93,44 @@ export class GpEventImageViewerComponent implements OnInit {
     this.fromDate = '';
     this.toDate = '';
     this.imageViewrService.fetchS3(this.config);
+    this.displayData = [];
     await this.fetchEvents();
   }
   errorInloading(event) {
     this.url = 'data:image/png;base64, ' + DefaultImage.defaultImage;
   }
+
+  loadEventImage(event) {
+    if ("Image" in event)
+      return 'data:image/png;base64, ' +event.Image;
+    else
+      return 'data:image/png;base64, ' + DefaultImage.defaultImage;
+  }
   // fetches image from base url and AWS storage
   async loadImage() {
+    console.log("Load images..");
     this.url = '';
-    if ( this.evantData.length > 0 && this.evantData[this.selectedIndex].Image !== undefined) {
-      if (this.imageMap.hasOwnProperty(this.evantData[this.selectedIndex].id)) {
-        this.url = this.imageMap[this.evantData[this.selectedIndex].id];
-      } else {
-        if (this.config.imgSrcType === 'baseUrl') {
-          this.url = await this.fetchImg(
-            this.config.baseUrl + this.evantData[this.selectedIndex].Image
-          );
+    for (const event of this.displayData) {
+      if("Image" in event && event.Image !== undefined) {
+        if (this.imageMap.hasOwnProperty(event.id)) {
+          this.url = this.imageMap[event.id];
         } else {
-          this.url = 'data:image/png;base64, '+this.evantData[this.selectedIndex].Image
-          //this.url = this.imageViewrService.getImage(
-          //  this.evantData[this.selectedIndex].Image
-          //);
+          if (this.config.imgSrcType === 'baseUrl') {
+            this.url = await this.fetchImg(
+              this.config.baseUrl + event.Image
+            );
+          } else {
+            event.ImageURL = 'data:image/png;base64, '+ event.Image;
+            this.url = event.ImageURL;
+            //this.url = this.imageViewrService.getImage(
+            //  this.evantData[this.selectedIndex].Image
+            //);
+          }
+          this.imageMap[event.id] = this.url;
         }
-        this.imageMap[this.evantData[this.selectedIndex].id] = this.url;
       }
     }
+    console.log("Image loaded");
   }
   // to show the events in the slide show.It will open a slide show pop-up
   async setSlideShow() {
@@ -174,7 +187,7 @@ export class GpEventImageViewerComponent implements OnInit {
     let data={
       width: this.config.width + 'px',
       height: this.config.height + 'px',
-      data: { url: this.url },
+      data: { url: this.loadEventImage(key) },
     };
     const dialogRef = this.showMapDialog(data);
 
@@ -208,11 +221,12 @@ export class GpEventImageViewerComponent implements OnInit {
               }
               return 0;
             });
+           
+            setTimeout(() => this.loadImage(), 2000);
             this.displayData = this.evantData;
             this.displayData.forEach(element => {
               element.isCollapsed1 = true;
-            })
-            setTimeout(() => this.loadImage(), 2000);
+            });
           }
         }
       });

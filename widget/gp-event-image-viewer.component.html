@@ -68,8 +68,8 @@
             </dl>
           </div>
           <div class="child" style="float: right;">
-            <img [src]="_DomSanitizationService.bypassSecurityTrustUrl(this.url)" (error)="errorInloading($event)"
-              class="stepper-img" (click)="openDialog(event.Image)" matTooltip="Click to zoom it">
+            <img [src]="_DomSanitizationService.bypassSecurityTrustUrl(loadEventImage(event))" (error)="errorInloading($event)"
+              class="stepper-img" (click)="openDialog(event)" matTooltip="Click to zoom it">
           </div>
         </div>
       </div>
