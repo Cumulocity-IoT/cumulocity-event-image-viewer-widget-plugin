@@ -1,8 +1,11 @@
+#  Deprecation notice
+This plugin is not further developed and it might break with upcoming Cumulocity releases. Use it at your own risk.
+The repository is archived but feel free to fork & adapt it to your needs in a new repo.
 
-# Event Image Viewer Widget for Cumulocity [<img width="35" src="https://user-images.githubusercontent.com/32765455/211497905-561e9197-18b9-43d5-a023-071d3635f4eb.png"/>](https://github.com/SoftwareAG/cumulocity-event-image-viewer-widget-plugin/releases/download/1.0.2/sag-ps-pkg-event-image-viewer-runtime-widget-1.0.2.zip)
+# Event Image Viewer Widget for Cumulocity [<img width="35" src="https://user-images.githubusercontent.com/32765455/211497905-561e9197-18b9-43d5-a023-071d3635f4eb.png"/>](https://github.com/Cumulocity-IoT/cumulocity-event-image-viewer-widget-plugin/releases/download/1.0.3/sag-ps-pkg-event-image-viewer-runtime-widget-1.0.3.zip)
 
 This Event Image Viewer Widget is the Cumulocity module federation plugin created using c8ycli. This plugin can be used in Application Builder or Cockpit.
-The Event Image Viewer widget help you to to display the events that are created whenever the image is captured by the camera.
+The Event Image Viewer widget help you to display the events that are created whenever the image is captured by the camera.
 
 ### Please choose Event Image Viewer release based on Cumulocity/Application builder version:
 
@@ -28,7 +31,7 @@ The Event Image Viewer widget help you to to display the events that are created
 
 ### Runtime Widget Deployment?
 
-* This widget support runtime deployment. Download [Runtime Binary](https://github.com/SoftwareAG/cumulocity-event-image-viewer-widget-plugin/releases/download/1.0.2/sag-ps-pkg-event-image-viewer-runtime-widget-1.0.2.zip) and install via Administrations --> Ecosystems --> Applications --> Packages.
+* This widget support runtime deployment. Download [Runtime Binary](https://github.com/Cumulocity-IoT/cumulocity-event-image-viewer-widget-plugin/releases/download/1.0.3/sag-ps-pkg-event-image-viewer-runtime-widget-1.0.3.zip) and install via Administrations --> Ecosystems --> Applications --> Packages.
 
 
 ## QuickStart
@@ -62,6 +65,6 @@ Congratulations! Event Image Viewer Widget is configured.
 
 ------------------------------
 
-This Widget is provided as-is and without warranty or support. They do not constitute part of the Software AG product suite. Users are free to use, fork and modify them, subject to the license agreement. While Software AG welcomes contributions, we cannot guarantee to include every contribution in the master project.
+This widget is provided as-is and without warranty or support. They do not constitute part of the Cumulocity product suite. Users are free to use, fork and modify them, subject to the license agreement. While Cumulocity GmbH welcomes contributions, we cannot guarantee to include every contribution in the master project.
 _____________________
-For more information you can Ask a Question in the [TECH Community Forums](https://tech.forums.softwareag.com/tag/Cumulocity-IoT).
+For more information you can Ask a Question in the [Tech Community Forums](https://techcommunity.cumulocity.com).
